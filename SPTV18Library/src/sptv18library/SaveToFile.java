@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,6 +40,6 @@ public class SaveToFile {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(SaveToFile.class.getName()).log(Level.SEVERE, "Неизвестный класс Books.txt", ex);
         }
-        return null;
+        return new ArrayList<Book>();
     }
 }

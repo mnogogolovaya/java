@@ -5,9 +5,11 @@
         <group>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/sptv18library/App.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/entity/Book.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/entity/Reader.java</file>
-            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/entity/History.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/provider/ProviderBook.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/provider/ProviderHistory.java</file>
             <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/sptv18library/SPTV18Library.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/provider/ProviderReader.java</file>
+            <file>file:/C:/Users/user/Documents/NetBeansProjects/sptv18/SPTV18Library/src/sptv18library/SaveToFile.java</file>
         </group>
     </open-files>
 </project-private>

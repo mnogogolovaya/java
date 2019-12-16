@@ -36,17 +36,5 @@ public class Book implements Serializable {
     public String toString() {
         return "Book{" + "title=" + title + ", author=" + author + ", publishedYear=" + publishedYear + '}';
     }
-
-    public void setPhone(String phone) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setLastname(String lastname) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setFirstname(String firstname) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }
