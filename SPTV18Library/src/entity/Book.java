@@ -31,10 +31,9 @@ public class Book implements Serializable {
     public void setPublishedYear(int publishedYear) {
         this.publishedYear = publishedYear;
     }
-
-    @Override
+    
     public String toString() {
-        return "Book{" + "title=" + title + ", author=" + author + ", publishedYear=" + publishedYear + '}';
+        return "Book{" +"Title= " +title + ", Author= " +author + ", PubYear= " + publishedYear + "}";
     }
     
 }

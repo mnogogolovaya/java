@@ -1,5 +1,6 @@
 package entity;
-public class Reader {
+import java.io.Serializable;
+public class Reader implements Serializable {
     private String firstname;
     private String lastname;
     private String phone;
@@ -30,15 +31,9 @@ public class Reader {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
-    @Override
-    public String toString() {
-        return "Reader{" + "firstname=" + firstname + ", lastname=" + lastname + ", phone=" + phone + '}';
-    }
-
-    public Reader get(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
+    public String toString() {
+        return "Reader{" +" firstname= " +firstname + ", lastname= " +lastname + ", phone= " + phone + "}";
+    }
     
 }

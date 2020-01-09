@@ -6,15 +6,15 @@ public class ProviderBook {
         Book book = new Book();
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println(" Название книги: ");
+        System.out.println("    Название книги: ");
         String title = scanner.nextLine();
         book.setTitle(title);
                     
-        System.out.println(" Автор книги: ");
+        System.out.println("    Автор книги: ");
         String author = scanner.nextLine();
         book.setAuthor(author);
                     
-        System.out.println(" Год издания книги: ");
+        System.out.println("    Год издания книги: ");
         int publishedYear = scanner.nextInt();
         scanner.nextLine();
         book.setPublishedYear(publishedYear);
