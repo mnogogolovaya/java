@@ -54,8 +54,19 @@ public class Tools {
         System.out.println("Год издания: ");
         System.out.println(book.getPublishedYear());
         System.out.println("    Исправить на: ");
-        String newPublishedYear = scanner.nextLine();
+        int newPublishedYear = scanner.nextInt();
         System.out.println(" ");
+        scanner.nextLine();
+        
+        if(!"0".equals(newTitle)){
+           book.setTitle(newTitle); 
+        }
+        if(!"0".equals(newAuthor)){
+           book.setAuthor(newAuthor); 
+        }
+        if(0 != newPublishedYear){
+           book.setPublishedYear(newPublishedYear); 
+        }
         
         return book;
     }

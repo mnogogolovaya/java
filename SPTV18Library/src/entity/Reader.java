@@ -32,8 +32,8 @@ public class Reader implements Serializable {
         this.phone = phone;
     }
     
+    @Override
     public String toString() {
         return "Reader{" +" firstname= " +firstname + ", lastname= " +lastname + ", phone= " + phone + "}";
-    }
-    
+    }  
 }

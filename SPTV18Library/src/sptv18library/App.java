@@ -22,7 +22,7 @@ public class App {
         histories.addAll(saveToFile.loadHistory());
     }
     
-    public void run(){
+    public void run() {
         System.out.println("~~~~ Учебная библиотека группы SPTV18 ~~~");
         boolean repeat = true;
         Tools tools = new Tools();
