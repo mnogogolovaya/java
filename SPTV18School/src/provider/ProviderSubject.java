@@ -6,8 +6,8 @@ public class ProviderSubject {
         Subject subject = new Subject();
         Scanner scanner = new Scanner (System.in);
                     System.out.println("    Название предмета: ");
-                    String titlesubject = scanner.nextLine();
-                    subject.setTitlesubject(titlesubject);                   
+                    String Subject = scanner.nextLine();
+                    subject.setSubjectTitle(Subject);                   
                     
                     System.out.println("    Часы: ");
                     int hours = scanner.nextInt();

@@ -11,7 +11,7 @@ public class ProviderJournal {
         Person person;
         Subject subject;
         Journal journal = new Journal();
-                    System.out.println("    Список людей: ");
+                    System.out.println("    Список учеников: ");
                     for (int i = 0; i < persons.size(); i++) {
                         person = persons.get(i);
                         System.out.println(i + 1 + ". " + persons.toString());
@@ -33,7 +33,13 @@ public class ProviderJournal {
                     System.out.println("    Выберите номер предмета: ");
                     int numSubject = scanner.nextInt();
                     journal.setSubject(subjects.get(numSubject-1));
-                    // journal.setGiveOutBook(new Date());
+                    journal.setSettingMark(new Date());
+                    
+                    
+                    System.out.println("    Введите оценку: ");
+                    String mark = scanner.nextLine();
+                    journal.setMark(mark);
+                    
         return journal;
     }
 }

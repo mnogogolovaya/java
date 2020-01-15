@@ -56,7 +56,7 @@ class App {
                     persons.add(person);
                     saveToFile.savePersons(persons);
                     
-                    System.out.println("    Ученик инициирован: " + person.toString());
+                    System.out.println("    Ученик инициирован. " + person.toString());
                     break;
                     
                 case 2:
@@ -73,7 +73,7 @@ class App {
                     subjects.add(subject);
                     saveToFile.saveSubjects(subjects);
                     
-                    System.out.println("    Предмет: инициирован: " + subject.toString());
+                    System.out.println("    Предмет инициирован. " + subject.toString());
                     break;
                     
                 case 4:
@@ -86,6 +86,11 @@ class App {
                 case 5:
                     ProviderJournal providerJournal = new ProviderJournal();
                     Journal journal = providerJournal.createJournal(persons, subjects);
+                    
+                    journals.add(journal);
+                    saveToFile.saveJournal(journals);
+                    
+                    System.out.println("    Добавлена новая оценка.");
                     break;
                     
                 case 6:

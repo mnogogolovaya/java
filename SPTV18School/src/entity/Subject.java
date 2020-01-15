@@ -2,19 +2,19 @@ package entity;
 import java.io.Serializable;
 public class Subject implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String titlesubject;
+    private String subjectTitle;
     private int hours;
     private String teacher;
     
     public Subject() {
     }
 
-    public String getTitlesubject() {
-        return titlesubject;
+    public String getSubjectTitle() {
+        return subjectTitle;
     }
 
-   public void setTitlesubject(String titlesubject) {
-        this.titlesubject = titlesubject;
+   public void setSubjectTitle(String subjectTitle) {
+        this.subjectTitle = subjectTitle;
     }
 
     public int getHours() {
@@ -35,6 +35,6 @@ public class Subject implements Serializable {
     
     @Override
     public String toString() {
-        return "Subject {" + " titleSubject = " + titlesubject + ", hours = " + hours + ", teacher = " + teacher + "}";
+        return "Subject {" + " subjectTitle = " + subjectTitle + ", hours = " + hours + ", teacher = " + teacher + "}";
     }
 }

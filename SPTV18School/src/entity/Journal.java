@@ -4,9 +4,9 @@ import java.util.Date;
 public class Journal implements Serializable {
     private Person person;
     private Subject subject;
-    private int assessment;
-    private Date settingAssessment;
-    private Date correctionAssessment;
+    private String mark;
+    private Date settingMark;
+    private Date correctionMark;
     
     public Person getPerson() {
         return person;
@@ -24,35 +24,36 @@ public class Journal implements Serializable {
         this.subject = subject;
     }
     
-    public int getAssessment() {
-        return assessment;
+    public String getMark() {
+        return mark;
     }
 
-    public void setAssessment(int assessment) {
-        this.assessment = assessment;
+    public void setMark(String mark) {
+        this.mark = mark;
     }
     
-    public Date getSettingAssessment() {
-        return settingAssessment;
+    public Date getSettingMark() {
+        return settingMark;
     }
 
-    public void setSettingAssessment(Date settingAssessment) {
-        this.settingAssessment = settingAssessment;
+    public void setSettingMark(Date settingMark) {
+        this.settingMark = settingMark;
     }
     
-    public Date getCorrectionAssessment() {
-        return correctionAssessment;
+    public Date getCorrectionMark() {
+        return correctionMark;
     }
 
-    public void setCorrectionAssessment(Date correctionAssessment) {
-        this.correctionAssessment = correctionAssessment;
+    public void setCorrectionMark(Date correctionMark) {
+        this.correctionMark = correctionMark;
     }
+    
     
     @Override
     public String toString() {
         return "Journal {" + " person = " + person + ", subject = " + subject + 
-                ", assessment = " + assessment + ", settingAssessment = " 
-                + settingAssessment + ", correctionAssessment = " + correctionAssessment +"}";
+                ", mark = " + mark + ", settingMark = " 
+                + settingMark + ", correctionMark = " + correctionMark +"}";
     }
     
 }
