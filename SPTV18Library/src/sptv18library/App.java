@@ -2,6 +2,7 @@ package sptv18library;
 import entity.Book;
 import entity.History;
 import entity.Reader;
+import interfaces.Saveble;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,13 +14,14 @@ public class App {
     List<Book> books = new ArrayList<>();
     List<Reader> readers = new ArrayList<>();
     List<History> histories = new ArrayList<>();
-    SaveToFile saveToFile;
+    Saveble saver;
     
     public App() {
-        saveToFile = new SaveToFile();
-        books.addAll(saveToFile.loadBooks());
-        readers.addAll(saveToFile.loadReaders());
-        histories.addAll(saveToFile.loadHistory());
+        // saver = new SaveToFile();
+        saver = new SaveToBase();
+        books.addAll(saver.loadBooks());
+        readers.addAll(saver.loadReaders());
+        histories.addAll(saver.loadHistory());
     }
     
     public void run() {
@@ -52,7 +54,7 @@ public class App {
                     Book book = providerBook.createBook();
                     
                     books.add(book);
-                    saveToFile.saveBooks(books);
+                    saver.saveBooks(books);
                     
                     System.out.println("    Книга инициирована: " + book.toString());
                     break;
@@ -62,7 +64,7 @@ public class App {
                     Reader reader = providerReader.createReader();
                     
                     readers.add(reader);                    
-                    saveToFile.saveReaders(readers);
+                    saver.saveReaders(readers);
                     
                     System.out.println("    Инициирован новый читатель. ");
                     System.out.println(reader.toString());
@@ -73,7 +75,7 @@ public class App {
                     History history = providerHistory.createHistory(books, readers);
                     
                     histories.add(history);
-                    saveToFile.saveHistory(histories);
+                    saver.saveHistory(histories);
                     
                     System.out.println("    Книга выдана. ");
                     System.out.println(history.toString());
@@ -96,7 +98,7 @@ public class App {
                 case 5:
                     System.out.println("    Список книг: ");
                     tools.printListBooks(books);
-                    saveToFile.saveBooks(books);
+                    saver.saveBooks(books);
                     break;
                     
                 case 6:
