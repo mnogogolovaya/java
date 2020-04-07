@@ -9,14 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Сетевая библиотека группы SPTV18</title>
+        <title>  -- Сетевая библиотека группы SPTV18 --  </title>
     </head>
     <body>
         <h1>Сетевая библиотека</h1>
         <p>${info}</p><br>
-        <a href="showNewPerson">Добавить Человека</a><br>
-        <a href="showNewSubject">Добавить Предмет</a><br>
-        <a href="showNewJournal">Добавить журнал</a>
+        <a href="showNewPerson">Добавить нового человека</a><br>
+        <a href="showNewSubject">Добавить новый предмет</a><br>
+        <a href="showNewJournal">Добавить новый журнал</a>
             <hr width="150px" align="left">
         <a href="listPersons">Список людей</a><br>
         <a href="listSubjects">Список предметов</a><br>
